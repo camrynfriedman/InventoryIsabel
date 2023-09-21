@@ -1,0 +1,37 @@
+.container{
+    background-color:#89a4be; 
+}
+.login_header{
+    background-color: antiquewhite;
+}
+
+body {
+    background-color: #373A36;
+    background-size: cover;
+
+}
+
+/* to style a class, you just need to add a "." in front of the name */
+.login_header {
+    text-align: center;
+}
+
+.login_header h1 {
+    font-size: 50px;
+    color: #C28E0E;
+    padding: 0px;
+    margin: 0px;
+}
+
+.login_body {
+    color: #C28E0E;
+    font-size: 50px;
+    border-bottom: 5px solid #9D968D;
+    margin: 0px;
+}
+
+.login_body p:after {
+    content: '';
+    display: block;
+    height: 5px;
+}
