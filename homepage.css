@@ -1,19 +1,94 @@
-.bgcontainer{
-    width: 100%;
-    min-height: 80vh;
-    background: #673070;
-    border-radius: 10px;
-}
-.navbarcontainer{
-    width: 20%;
-    min-height: 100vh;
-    left: 0px;
-    top: 50px;
-    position: absolute;
+.bgcontainer {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: #e9dbeb;
 }
 
-.navbarcontents{
+.header {
+  min-width: 100vw;
+  text-align: center;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+
+/* Nav Bar Styling */
+.navbarcontainer {
+  min-width: 100vw;
+  height: fit-content;
+  position: absolute;
+  padding: 3px;
+}
+
+ul {
+  background-color: #673070;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  padding:5px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/*Align Account to Right of NavBar*/
+ul li:last-child {
+  float: right;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #111;
+}
+
+/*Style the Account dropdown*/
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
