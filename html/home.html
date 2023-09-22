@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<!-- How links (hrefs) work w.r.t. where files are located:
+<href="login.css">	The "login.css" file is located in the same folder as the current page
+<href="css/login.css">	The "login.css" file is located in the css folder in the current folder
+<href="/css/login.css">	The "login.css" file is located in the css folder at the root of the current web
+<href="../login.css">	The "login.css" file is located in the folder one level up from the current folder-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> Parrot Ice Homepage </title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+    <div class="sidenav">
+        <a href="home.html">Home</a>
+        <a href="orders.html">Orders</a>
+        <a href="inventory.html">Inventory</a>
+        <a href="sales.html">Sales</a>
+        <a href="account.html">Account</a>
+    </div>
+    <div id="main">
+        <div class="header">
+            Parrot Ice Inventory Management System
+        </div>
+        <!--NOTE: The following can be uncommented if you
+        want to implement the search bar again.-->
+        <!-- <div class="seachbar">
+            <input type="text" placeholder="Search.." />
+        </div> -->
+
+        <!--The layout is styled like a table
+    with two rows and the second column is split into 3 containers-->
+        <div class="row1">Home</div>
+        <div class="row">
+            <div class="container1">
+            </div>
+            <div class="column">
+                <div class="container2">
+                </div>
+                <div class="container3">
+                </div>
+                <div class="container4">
+                </div>
+            </div>
+        </div>
+    </div> <!--end of Main div-->
+</body>
+
+</html>

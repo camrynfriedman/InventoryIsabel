@@ -1,0 +1,140 @@
+/*Header*/
+.header {
+    padding: 1px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*NOTE: Below is currently not being used since
+ I got rid of the search bar. If you want to add it back,
+ uncomment the code with the note in the html files.*/
+/*Styling for search bar*/
+.seachbar {}
+
+.seachbar input[type=text] {
+    padding: 6px;
+    border: solid;
+    border-radius: 10px;
+    border-color: rebeccapurple;
+    font-size: 15px;
+    background-color: rebeccapurple;
+    min-width: 98%;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+/*end Styling for search bar*/
+
+/*Styling for side nav bar*/
+.sidenav {
+    height: 100%;
+    width: 150px;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rebeccapurple;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: block;
+    border-radius: 10px;
+}
+
+/*Setting the color of the buttons on hover and active.*/
+.sidenav a:hover {
+    background-color: dimgrey;
+}
+
+.sidenav a:active {
+    background-color: dimgrey;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/*Page content after nav bar*/
+#main {
+    margin-left: 150px;
+}
+
+body {
+    background-color: mediumpurple;
+    color: white;
+}
+
+.row {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.row1 {
+    display:inline-flex;
+    flex-direction:row;
+    height: 20px;
+    text-align: center; /*Not sure why this isn't working. Might want to look into it and update.*/
+    font-size:18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.column {
+    display: inline-flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+/*Left box on main part of screen*/
+.container1 {
+    background-color: white;
+    width: 550px;
+    padding: 10px;
+    height: 470px;
+    margin-top: 20px;
+}
+
+.container2 {
+    background-color: white;
+    width: 430px;
+    padding: 10px;
+    height: 130px;
+    margin-top: 20px;
+}
+
+.container3 {
+    background-color: white;
+    width: 430px;
+    padding: 10px;
+    height: 130px;
+    margin-top: 20px;
+}
+
+.container4 {
+    background-color: white;
+    width: 430px;
+    padding: 10px;
+    height: 130px;
+    margin-top: 20px;
+}
